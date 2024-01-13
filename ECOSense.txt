@@ -1,0 +1,19 @@
+Author: Engr. Bryndell Torio
+Date: 2024-01-07 06:07
+Project: ECOSENSE: IOT-Driven power monitoring and centralized control system for energy conservation.
+
+
+ECOSense is a good project if you are monitoring small number of AC units.
+
+But if we use ECOSense in a factory or a small community where multiple AC units, controlling the AC by turning on/off the power source is not efficient
+solution. You will be needing one node per AC unit which will be quite expensive when using platform such as AWS, Things.ph, or Blynk. Also turning off
+the AC by removing the power source can be detrimental to the AC units.
+
+I suggest use a modbus capable power meter and a contactor to control the AC units this will still control the power source, same functionality as the current ECOSense
+but this offers the ability to use modbus to control AC units that are compatible with modbus protocol. Turning on/off an AC unit using the MODBUS will ensure the longevity
+of the AC units as the device will turn off normally.
+
+The major advantage of this setup is that you will only use one node every 32 AC units. This will greatly reduce the cost in the IoT cloud development.
+
+contactor: https://duckduckgo.com/?q=contactor&t=newext&atb=v405-1&iar=images&iax=images&ia=images&iai=https%3A%2F%2Fkitairu.net%2Fimages%2Fproducts%2Fproducts_60164_e6fcdc7c7fcda2e81a92fbe0fb9fd56c.jpeg
+Power Meter: https://duckduckgo.com/?q=power+meter+with+modbus&t=newext&atb=v405-1&iar=images&iax=images&ia=images&iai=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F7142wJtLw0L.jpg
